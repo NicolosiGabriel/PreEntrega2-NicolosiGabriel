@@ -1,0 +1,475 @@
+/* inicio estilos generales */
+
+/* paleta de colores
+#E0D8B0
+#FCFFE7
+#DEA057
+#CE9461 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: Bebas;
+  src: url(/assets/fonts/bebas-neue.regular.woff);
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+a {
+  text-decoration: none;
+  color: #fcffe7;
+}
+/* fin estilos generales */
+/* Comienzo del header */
+.header {
+  background-color: rgb(206, 198, 162);
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  /* z-index: 10; */
+}
+.logo__img {
+  display: flex;
+  width: 80%;
+}
+.header__nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+.header__nav__pages--btn_pg,
+.header__nav__pages--btn_form {
+  margin: 0.1em 0.4em;
+}
+.header__nav__pages--btn_form {
+  padding: 0.5em;
+  border-radius: 20px;
+  background-color: #dea057;
+}
+.main {
+  position: relative;
+  width: 100vw;
+  /* min-height: 100vh; */
+  display: flex;
+  flex-direction: column;
+  background: rgb(222, 160, 87);
+  background: linear-gradient(
+    180deg,
+    rgba(222, 160, 87, 1) 50%,
+    rgba(224, 216, 176, 1) 100%
+  );
+}
+h1 {
+  font-family: Bebas;
+  font-weight: lighter;
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 5px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fcffe7;
+}
+/* main home */
+.main__home--container {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+.main__home__div-img,
+.main__home__div-vid,
+.main__home__div-clientes {
+  text-align: center;
+  padding-bottom: 0.3em;
+}
+.main__home__div-img {
+  width: 63%;
+}
+.main__home__div-img--img {
+  width: 100%;
+  border-radius: 60px;
+  box-shadow: -10px -10px 15px #c3b0a0;
+}
+.main__home__div-vid--video {
+  width: 70%;
+}
+.main__home__div-clientes {
+  display: flex;
+  flex-direction: column;
+}
+.main__home__div-clientes--title {
+  text-align: center;
+  font-size: 1rem;
+  color: #fcffe7;
+}
+.main__home__div-clientes__images {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+.main__home__div-clientes--img {
+  padding: 1em 0.2em;
+  width: 15%;
+}
+/* main us */
+.main__us__container {
+  position: relative;
+  height: 100vh;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  overflow: auto;
+}
+/* main jobs */
+.main__jobs__container,
+.main__faqs__container {
+  width: 90vw;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+}
+.main__jobs__container--cuadros,
+.main__jobs__container--tripticos,
+.main__jobs__container--murales {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.main__jobs__container--murales {
+  justify-content: center;
+}
+.main__jobs__container--subtitles {
+  font-size: 1rem;
+}
+.img__jobs {
+  width: 160px;
+  padding: 0.3em;
+}
+.main__jobs__container--tripticos img {
+  height: 94.29px;
+}
+.img__jobs--murales {
+  height: 166px;
+  padding: 0.3em 0.3em 1em;
+}
+/* main faqs */
+.main__faqs__container h2 {
+  font-size: 1rem;
+  font-style: italic;
+}
+.main__faqs__container--question,
+.main__faqs__container--response {
+  padding-top: 0.5em;
+  font-size: 1rem;
+}
+.main__faqs__container--question {
+  font-weight: 900;
+}
+.main__faqs__container--response {
+  padding-left: 1em;
+  font-weight: 500;
+  font-style: italic;
+}
+/* main contact */
+.main__contact {
+  min-height: min-content;
+}
+.main__contact__form {
+  position: relative;
+  margin: 15px auto;
+  padding: 1em 0;
+  width: 55vw;
+  background-image: url(/assets/images/img_001.jpg);
+}
+.main__contact__form--title {
+  color: #fcffe7;
+  font-weight: bold;
+  padding-bottom: 1em;
+  text-align: center;
+}
+#formulario {
+  padding: 0 0.5em;
+}
+.main__contact__form label {
+  display: none;
+}
+.main__contact__form input,
+select {
+  display: block;
+  width: 189.5px;
+  margin: 0.5em 0;
+  font-weight: bold;
+}
+.main__contact__form textarea {
+  width: 189.5px;
+  height: 180px;
+}
+.main__contact__form input.reset,
+.main__contact__form input.submit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 189.5px;
+}
+/* Fin del main */
+/* Comienzo del footer */
+.foot {
+  position: relative;
+  width: 100vw;
+  padding-bottom: 10px;
+  background-color: #000;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1.5fr 1.5fr 2fr;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+  gap: 10px;
+}
+.foot__net {
+  display: flex;
+  text-align: center;
+  color: #fcffe7;
+}
+.foot__net__icons {
+  position: relative;
+  top: 15px;
+  padding: 5px;
+}
+.foot__map {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5, 1fr);
+  gap: 20px 0;
+  text-align: center;
+  color: #fcffe7;
+}
+.foot__map--content {
+  display: contents;
+  height: 100%;
+}
+.foot__contact {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 4fr 1fr;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fcffe7;
+}
+.foot__contact--gmap iframe {
+  width: 100%;
+  height: 60%;
+}
+.foot__contact--items p {
+  display: inline-block;
+  font-size: 0.9em;
+  padding-top: 1.5em;
+}
+
+@media (min-width: 768px) {
+  .foot {
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px 50px;
+  }
+  .foot__map {
+    padding-top: 10px;
+  }
+}
+
+@media (min-width: 992px) {
+  .header {
+    position: fixed;
+    height: 12vh;
+    display: grid;
+    grid-template-columns: 200px auto;
+    justify-content: space-between;
+    z-index: 10;
+  }
+
+  .logo__img {
+    width: 80%;
+  }
+  .header__nav {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    gap: 0 20px;
+  }
+  .header__nav__pages--btn_pg,
+  .header__nav__pages--btn_form {
+    margin: 0.5em;
+  }
+  .active-tab {
+    color: #bc5c09;
+  }
+  .header__nav__pages--btn_pg:hover,
+  .header__nav__pages--btn_form:hover,
+  .foot__map--content a:hover,
+  .foot__net__content--face:hover,
+  .foot__net__content--inst:hover,
+  .foot__net__content--wats:hover {
+    transform: scale(1.2);
+  }
+
+  /* Fin del header */
+  /* Comienzo del main */
+  .main {
+    top: 12vh;
+    display: grid;
+  }
+  h1 {
+    font-size: 3.5rem;
+    padding-top: 0.5em;
+  }
+  /* main home */
+  .main__home--container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+  }
+  .main__home__div-img,
+  .main__home__div-vid,
+  .main__home__div-clientes {
+    padding: 1em;
+  }
+  .main__home__div-img {
+    width: 43%;
+  }
+  .main__home__div-img--img {
+    border-radius: 100px;
+  }
+  .main__home__div-clientes--title {
+    padding: 1em 0;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .main__home__div-clientes--img {
+    padding: 0 1em;
+    width: 10%;
+  }
+  /* main us */
+  .main__us__container {
+    width: 75%;
+    height: 100vh;
+  }
+  .main__us__container--text {
+    padding: 2em;
+  }
+  /* main jobs */
+  .main__jobs__container,
+  .main__faqs__container {
+    width: 80vw;
+  }
+  .main__jobs__container--cuadros,
+  .main__jobs__container--tripticos,
+  .main__jobs__container--murales {
+    justify-content: flex-start;
+    align-content: space-around;
+  }
+  .main__jobs__container--cuadros {
+    height: 450px;
+  }
+  .main__jobs__container--subtitles {
+    font-size: 1.5rem;
+    padding: 1em;
+  }
+  .img__jobs {
+    width: 250px;
+  }
+  .main__jobs__container--cuadros img {
+    transition: all 1s;
+  }
+  .main__jobs__container--tripticos img {
+    height: 163.65px;
+    transition: all 5s;
+  }
+  .main__jobs__container--murales img {
+    transition: all 5s;
+  }
+  .img__jobs--murales {
+    height: 266px;
+  }
+  .main__jobs__container--cuadros img:hover,
+  .main__jobs__container--tripticos img:hover,
+  .main__jobs__container--murales img:hover {
+    transform: scale(1.5);
+  }
+  /* main faqs */
+  .main__faqs__container {
+    justify-content: center;
+    padding: 1em;
+    margin-bottom: 1em;
+  }
+  .main__faqs__container h2 {
+    font-size: 1.25rem;
+  }
+  .main__faqs__container--question,
+  .main__faqs__container--response {
+    padding-top: 1em;
+  }
+  .main__faqs__container--response {
+    padding-left: 3em;
+  }
+
+  /* main contact */
+  .main__contact__form {
+    margin: 20px auto;
+    padding: 2em 0;
+    width: 25vw;
+  }
+  #formulario {
+    padding: 0 1.3em;
+  }
+  .main__contact__form input,
+  select {
+    width: 343.5px;
+  }
+  .main__contact__form textarea {
+    width: 343.5px;
+  }
+  .main__contact__form input.reset,
+  .main__contact__form input.submit {
+    display: inline;
+    width: 168px;
+  }
+  /* Fin del main */
+  /* Comienzo del footer */
+  .foot {
+    top: 12vh;
+    height: 28vh;
+    margin-top: auto;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    gap: 0 20px;
+  }
+  .foot__net {
+    padding: 1em;
+  }
+  .foot__map {
+    padding: 1em;
+  }
+  .foot__contact {
+    margin-top: 20px;
+  }
+}
+/* Fin del Footer */
+/* Animaciones */
